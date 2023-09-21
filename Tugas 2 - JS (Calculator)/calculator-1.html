@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator 🧮</title>
+  </head>
+  <body>
+    <h1>Simple Calculator 🧮</h1>
+
+    <input type="text" id="first" placeholder="Input here" />
+    <input type="text" id="second" placeholder="Input here" />
+
+    <br />
+    <br />
+
+    <input type="button" value="+" onclick="addCalc()" />
+    <input type="button" value="-" onclick="subCalc()" />
+    <input type="button" value="*" onclick="multiCalc()" />
+    <input type="button" value="/" onclick="divCalc()" />
+
+    <br />
+    <br />
+
+    <div id="result"></div>
+
+    <script>
+      function addCalc() {
+        const first = parseFloat(document.getElementById('first').value);
+        const second = parseFloat(document.getElementById('second').value);
+
+        document.getElementById('result').innerHTML = first + second;
+      }
+
+      function subCalc() {
+        const first = parseFloat(document.getElementById('first').value);
+        const second = parseFloat(document.getElementById('second').value);
+
+        document.getElementById('result').innerHTML = first - second;
+      }
+
+      function multiCalc() {
+        const first = parseFloat(document.getElementById('first').value);
+        const second = parseFloat(document.getElementById('second').value);
+
+        document.getElementById('result').innerHTML = first * second;
+      }
+
+      function divCalc() {
+        const first = parseFloat(document.getElementById('first').value);
+        const second = parseFloat(document.getElementById('second').value);
+
+        document.getElementById('result').innerHTML = first / second;
+      }
+    </script>
+  </body>
+</html>

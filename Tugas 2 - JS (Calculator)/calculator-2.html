@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator 📱</title>
+  </head>
+  <body>
+    <h1>Simple Calculator 📱</h1>
+
+    <input type="text" id="result" />
+
+    <br />
+    <br />
+
+    <input type="button" value="1" class="num" onclick="display('1')" />
+    <input type="button" value="2" class="num" onclick="display('2')" />
+    <input type="button" value="3" class="num" onclick="display('3')" />
+    <input type="button" value="4" class="num" onclick="display('4')" />
+    <input type="button" value="5" class="num" onclick="display('5')" />
+    <input type="button" value="6" class="num" onclick="display('6')" />
+    <input type="button" value="7" class="num" onclick="display('7')" />
+    <input type="button" value="8" class="num" onclick="display('8')" />
+    <input type="button" value="9" class="num" onclick="display('9')" />
+    <input type="button" value="0" class="num" onclick="display('10')" />
+
+    <br />
+    <br />
+
+    <input type="button" value="+" onclick="display(' + ')" />
+    <input type="button" value="-" onclick="display(' - ')" />
+    <input type="button" value="*" onclick="display(' * ')" />
+    <input type="button" value="/" onclick="display(' / ')" />
+    <input type="button" value="C" onclick="clrScreen()" />
+    <input type="button" value="=" onclick="calc()" />
+
+    <br />
+    <br />
+
+    <script>
+      function clrScreen() {
+        document.getElementById('result').value = '';
+      }
+
+      function display(value) {
+        document.getElementById('result').value += value;
+      }
+
+      function calc() {
+        let p = document.getElementById('result').value;
+        let q = eval(p);
+        document.getElementById('result').value = q;
+      }
+    </script>
+  </body>
+</html>
