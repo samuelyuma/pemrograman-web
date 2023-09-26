@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.header img {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.header p {
+  padding: 0 172px;
+}
+
+form {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  background-color: #8ecae6;
+  margin: 56px 128px;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 48px 0;
+}
+
+form h2 {
+  font-size: 72px;
+  color: 023047;
+}
+
+form .form-right .roww {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+form .form-right .roww p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+form .form-right .roww,
+input {
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 8px;
+  font-size: 16px;
+}
+
+form .form-right .area p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+form .form-right .area textarea {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form .form-right button {
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background-color: #023047;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+}
+
+.matkul {
+  margin-left: 128px;
+  padding-bottom: 12px;
+}
+
+.matkul h3 {
+  color: #023047;
+}
+
+.tabel {
+  margin-left: 128px;
+  margin-bottom: 56px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 8px;
+}
