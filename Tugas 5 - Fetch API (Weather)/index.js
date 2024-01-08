@@ -1,7 +1,7 @@
 const api =
   'https://api.open-meteo.com/v1/forecast?latitude=-7.2492&longitude=112.7508&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m,weathercode';
 
-infoValidBMKG = () => {
+cuaca = () => {
   fetch(api)
     .then((response) => response.json())
     .then((data) => {
@@ -34,4 +34,4 @@ infoValidBMKG = () => {
     });
 };
 
-infoValidBMKG();
+cuaca();
